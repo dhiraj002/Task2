@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+.feature_image{
+    height: 18rem;
+    width: 18rem;
+    border: 2px solid black;
+    margin-top: 4rem;
+}
+
+.main_container{
+  margin-top: 3rem;
+  margin-left: 30rem;
+  position: absolute;
+}
+
+.dropDown{
+margin-top: 2rem;
+}
+
+.thumbnails{
+    /* border: 2px solid red; */
+    height: 18rem;
+    width: 18rem;
+    margin-top: 2rem;
+    display: grid;
+    
+   grid-template-columns: repeat(3,5rem)
+}
+
+.inner{
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+  
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+.green{
+    background-color: green;
+    color: white;
+}
+
+.selected{
+    display: block;
+}
+.notSelected{
+    display: none;
+}
+/* 
+#main-container {
+    margin-bottom: 10px;
+  }
+  
+  #thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .thumbnail.selected {
+    border-color: blue;
+  }
+  
+  #button-container {
+    margin-bottom: 10px;
+  }
+  
+  #dropdown-container {
+    margin-bottom: 10px;
+  } */
