@@ -1,10 +1,8 @@
 const body = document.querySelector("body");
 const div = document.createElement("div");
-const dropDown = document.querySelector("#colors");
-const div2 = document.createElement("div");
+const mainContainer = document.querySelector(".main_container");
 
 const innerDiv = ` 
-
 <div class="red inner">1/1-red</div>
  <div class="blue inner">1/1-blue</div>
  <div class="green inner">1/1-green</div>
@@ -14,6 +12,23 @@ const innerDiv = `
  <div class="blue inner">1/2-blue</div>
  <div class="red inner">1/3-red</div>
  <div class="green inner">1/3-green</div>`;
+
+mainContainer.innerHTML += `
+<button class="all btn">All</button>
+<button class="blue btn">Blue</button>
+<button class="green btn">Green</button>
+<button class="red btn">Red</button> 
+
+<div class="dropDown">
+    <select  id="colors">
+        <option value="all">All</option>
+        <option value="blue" >blue</option>
+        <option value="green">green</option>
+        <option value="red">red</option>
+    </select>`;
+
+const dropDown = document.querySelector("#colors");
+const div2 = document.createElement("div");
 
 div.className = "feature_image";
 div2.className = "thumbnails";
@@ -50,10 +65,11 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
+//Dropdown
 dropDown.addEventListener("click", function (e) {
   const color = e.currentTarget.value;
-  console.log(color)
-  
+  console.log(color);
+
   for (let i = 0; i < innerDivs.length; i++) {
     if (color === "all") {
       innerDivs[i].style.display = "block";
@@ -68,9 +84,4 @@ dropDown.addEventListener("click", function (e) {
       innerDivs[i].style.display = "none";
     }
   }
-
 });
-
-function changeColor(){
-
-}

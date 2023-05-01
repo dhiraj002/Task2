@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     margin-left: 2rem;
+    background-color: rgb(218, 213, 213);
 }
 
 .feature_image{
@@ -53,39 +54,4 @@ margin-top: 2rem;
     color: white;
 }
 
-.selected{
-    display: block;
-}
-.notSelected{
-    display: none;
-}
-/* 
-#main-container {
-    margin-bottom: 10px;
-  }
-  
-  #thumbnail-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .thumbnail {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin: 5px;
-    cursor: pointer;
-    border: 2px solid transparent;
-  }
-  
-  .thumbnail.selected {
-    border-color: blue;
-  }
-  
-  #button-container {
-    margin-bottom: 10px;
-  }
-  
-  #dropdown-container {
-    margin-bottom: 10px;
-  } */
+
